@@ -1,39 +1,13 @@
 import os
 import sys
 
-import pygame
-from pygame.locals import *
+from PySide6.QtWidgets import QApplication
 
+from src.launcher.launcher import Terrestria_launcher_Window
 from utils import global_path
 
-pygame.init()
 global_path.set_proj_abs_path(os.path.abspath(__file__))
-
-DEVELOPMENT = True
-
-icon = pygame.image.load(global_path.get_proj_abs_path(path="assets/Terrestria.png"))
-pygame.display.set_icon(icon)
-
-if DEVELOPMENT:
-    flags = DOUBLEBUF
-    screen_width, screen_height = 1280, 720
-    screen = pygame.display.set_mode((screen_width, screen_height), flags)
-else:
-    flags = DOUBLEBUF | FULLSCREEN
-    screen_width, screen_height = (
-        pygame.display.Info().current_w,
-        pygame.display.Info().current_h,
-    )
-    screen = pygame.display.set_mode((screen_width, screen_height), flags)
-
-pygame.display.set_caption("Terrestria")
-clock = pygame.time.Clock()
-start_time = pygame.time.get_ticks()
-
-mainLoop = True
-while mainLoop:
-    events = pygame.event.get()
-    dt = clock.tick(60)
-
-pygame.quit()
-sys.exit()
+Terrestria_launcher_Q_App = QApplication()
+Terrestria_launcher_app_GUI = Terrestria_launcher_Window()
+Terrestria_launcher_app_GUI.show()
+sys.exit(Terrestria_launcher_Q_App.exec())

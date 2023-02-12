@@ -1,0 +1,6 @@
+QWidget:window {border: 0px solid transparent;background-color: #000000;}
+QLabel {background: transparent;color: #FFFFFF;}
+QPushButton {border: none; qproperty-iconSize: 26px;}
+QScrollArea {background-color: #fafbfb;border: none;}
+QLineEdit {background: transparent;border: 1px solid transparent;border-bottom: 1px solid;color: #000000;}
+QGroupBox {border:none;}
