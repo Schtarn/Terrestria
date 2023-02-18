@@ -10,7 +10,7 @@ with open("config/config.json", "r") as j:
     config = json.load(j)
 
 build.build(
-    withconsole=True,
+    withconsole=False,
     path=os.path.abspath("Terrestria.py"),
     file_dict=["assets", "config"],
     companyname="Cshtarn",
