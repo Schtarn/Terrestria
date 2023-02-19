@@ -2,8 +2,8 @@ CC=<clcache>
 CCCOM=${TEMPFILE("$CC $_MSVC_OUTPUT_FLAG /c $CHANGED_SOURCES $CFLAGS $CCFLAGS $_CCCOMCOM","$CCCOMSTR")}
 CFILESUFFIX=.c
 CLCACHE_DIR=C:\Users\SHISSD~1\AppData\Local\Nuitka\Nuitka\Cache\clcache
-CLCACHE_STATS=D:\Github\Terrestria\Terrestria_Server_build\Terrestria_Server.onefile-build\clcache-stats.33532.txt
-CPPDEFINES=['_XOPEN_SOURCE', '__NUITKA_NO_ASSERT__', '_NUITKA_ONEFILE_MODE']
+CLCACHE_STATS=D:\Github\Terrestria\Terrestria_Server_build\Terrestria_Server.onefile-build\clcache-stats.23496.txt
+CPPDEFINES=['_XOPEN_SOURCE', '__NUITKA_NO_ASSERT__', '_NUITKA_ONEFILE_MODE', '_NUITKA_PLUGIN_MULTIPROCESSING_ENABLED=1']
 CPPDEFPREFIX=/D
 CPPDEFSUFFIX=
 CPPPATH=['.', 'D:\\Github\\Terrestria\\venv\\lib\\site-packages\\nuitka\\build\\include', 'D:\\Github\\Terrestria\\venv\\lib\\site-packages\\nuitka\\build\\static_src', 'D:\\Github\\Terrestria\\venv\\lib\\site-packages\\nuitka\\build\\inline_copy\\zstd']

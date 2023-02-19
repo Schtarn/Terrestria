@@ -2,8 +2,8 @@ CC=<clcache>
 CCCOM=${TEMPFILE("$CC $_MSVC_OUTPUT_FLAG /c $CHANGED_SOURCES $CFLAGS $CCFLAGS $_CCCOMCOM","$CCCOMSTR")}
 CFILESUFFIX=.c
 CLCACHE_DIR=C:\Users\SHISSD~1\AppData\Local\Nuitka\Nuitka\Cache\clcache
-CLCACHE_STATS=D:\Github\Terrestria\Terrestria_Server_build\Terrestria_Server.build\clcache-stats.40884.txt
-CPPDEFINES=['_XOPEN_SOURCE', '__NUITKA_NO_ASSERT__', '_NUITKA_STANDALONE', '_NUITKA_ONEFILE_MODE', '_NUITKA_ONEFILE_TEMP_BOOL', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=153', '_NUITKA_EXE']
+CLCACHE_STATS=D:\Github\Terrestria\Terrestria_Server_build\Terrestria_Server.build\clcache-stats.37692.txt
+CPPDEFINES=['_XOPEN_SOURCE', '__NUITKA_NO_ASSERT__', '_NUITKA_STANDALONE', '_NUITKA_ONEFILE_MODE', '_NUITKA_ONEFILE_TEMP_BOOL', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=153', '_NUITKA_EXE', '_NUITKA_PLUGIN_MULTIPROCESSING_ENABLED=1']
 CPPDEFPREFIX=/D
 CPPDEFSUFFIX=
 CPPPATH=['C:\\Users\\shissdo-zephyrus\\AppData\\Local\\Programs\\Python\\Python310\\include', '.', 'D:\\Github\\Terrestria\\venv\\lib\\site-packages\\nuitka\\build\\include', 'D:\\Github\\Terrestria\\venv\\lib\\site-packages\\nuitka\\build\\static_src']
