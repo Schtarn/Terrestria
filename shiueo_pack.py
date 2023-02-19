@@ -19,3 +19,14 @@ build.build(
     plugin_dict=["pyside6"],
     include_package_dict=[],
 )
+
+build.build(
+    withconsole=True,
+    path=os.path.abspath("Terrestria_Server.py"),
+    file_dict=["assets", "config"],
+    companyname="Cshtarn",
+    product_version=config["version"],
+    icon=global_path.get_proj_abs_path("assets/Terrestria_Server.png"),
+    plugin_dict=["pyside6"],
+    include_package_dict=[],
+)

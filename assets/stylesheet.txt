@@ -6,4 +6,5 @@ QComboBox {border: none; background-color: #1A1A1A; border-radius: 4px; color: #
 QComboBox QListView {border: none; background-color: #1A1A1A; color: #FFFFFF;}
 QPushButton {border: none; background-color: #FF0A54; color: #FFFFFF; border-radius: 4px;}
 QPushButton::pressed {border: none; background-color: #1A1A1A; color: #FFFFFF;}
+QPushButton:disabled {border: none; background-color: #000000; color: #FFFFFF;}
 QScrollArea {background-color: #fafbfb;border: none;}

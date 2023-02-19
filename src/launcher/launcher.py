@@ -25,13 +25,17 @@ class Terrestria_launcher_Window(QWidget):
         self.GRID = QGridLayout()
 
         self.ServerStatusBox = QHBoxLayout()
-        self.Server_Online_People_Number = QLabel("<font color='#FFFFFF'>Online:</font> <font color='#FF0A54'>--</font>")
+        self.Server_Online_People_Number = QLabel(
+            "<font color='#FFFFFF'>Online:</font> <font color='#FF0A54'>--</font>"
+        )
         self.Server_Online_People_Number.setFont(QFont(self.Pretendard_SemiBold, 20))
-        self.Server_Uptime = QLabel("<font color='#FFFFFF'>Uptime:</font> <font color='#FF0A54'>--</font>")
+        self.Server_Uptime = QLabel(
+            "<font color='#FFFFFF'>Uptime:</font> <font color='#FF0A54'>--</font>"
+        )
         self.Server_Uptime.setFont(QFont(self.Pretendard_SemiBold, 20))
         self.Server_Address = QLabel("Server:")
         self.Server_Address.setFont(QFont(self.Pretendard_SemiBold, 20))
-        self.Server_Address_Type = QLineEdit()
+        self.Server_Address_Type = QLineEdit("Main")
         self.Server_Address_Type.setFont(QFont(self.Pretendard_Regular, 20))
 
         self.LoginBox = QHBoxLayout()
