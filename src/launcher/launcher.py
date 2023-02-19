@@ -25,10 +25,14 @@ class Terrestria_launcher_Window(QWidget):
         self.GRID = QGridLayout()
 
         self.ServerStatusBox = QHBoxLayout()
-        self.Server_Online_People_Number = QLabel("Online: --")
+        self.Server_Online_People_Number = QLabel("<font color='#FFFFFF'>Online:</font> <font color='#FF0A54'>--</font>")
         self.Server_Online_People_Number.setFont(QFont(self.Pretendard_SemiBold, 20))
-        self.Server_Uptime = QLabel("Uptime: --")
+        self.Server_Uptime = QLabel("<font color='#FFFFFF'>Uptime:</font> <font color='#FF0A54'>--</font>")
         self.Server_Uptime.setFont(QFont(self.Pretendard_SemiBold, 20))
+        self.Server_Address = QLabel("Server:")
+        self.Server_Address.setFont(QFont(self.Pretendard_SemiBold, 20))
+        self.Server_Address_Type = QLineEdit()
+        self.Server_Address_Type.setFont(QFont(self.Pretendard_Regular, 20))
 
         self.LoginBox = QHBoxLayout()
         self.LoginBox_ID_Label = QLabel("ID:")
@@ -78,6 +82,8 @@ class Terrestria_launcher_Window(QWidget):
 
         self.ServerStatusBox.addWidget(self.Server_Online_People_Number)
         self.ServerStatusBox.addWidget(self.Server_Uptime)
+        self.ServerStatusBox.addWidget(self.Server_Address)
+        self.ServerStatusBox.addWidget(self.Server_Address_Type)
 
         self.LoginBox.addWidget(self.LoginBox_ID_Label)
         self.LoginBox.addWidget(self.LoginBox_ID_Input)
