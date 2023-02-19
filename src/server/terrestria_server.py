@@ -10,4 +10,4 @@ async def root():
 
 
 def run_server(host, port):
-    uvicorn.run(app, host=host, port=port)
+    uvicorn.run(app, host=host, port=int(port))
